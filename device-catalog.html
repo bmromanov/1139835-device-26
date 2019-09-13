@@ -7,37 +7,51 @@
   <body>
    <header>
     <nav>
-     <a href="index.html">
-      <img src="img/index-logo.svg" wight="30" height="90" alt="Логотип Девайс">
-    </a>
-    <!-- Не знаю как разметить поиск -->
+     <a>
+          <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
+        </a>
+        <img src="img/search.svg" wight="16" height="16"/>
+        <!-- Поиск пока не размечал, просто картинку добавил сразу-->
       <ul>
         <li>
           <a href="###">
-            <img src="iconca vhoda" wight="10" heigt="10" alt="Иконка пользователя"></a>
+            <img src="img/user.svg" wight="13" height="12"/>
+            <!-- По моему сдесь не нужна ссылка-->
+          </a>
         </li>
         <li>
           <a href="###">Валентин Петухов</a>
         </li>
         <li>
           <a href="##">Выйти</a>
-          <!-- Вроде ссылка, так как выход всегда обновляет страницу -->
         </li>
       </ul>
       <ul>
-        <li><a href="#C">Сравнить</a> </li>
-        <li><a href="#K">Корзина</a> </li>
+        <li>
+          <img src="img/compare.svg" wight="10" height="10"/>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <img src="img/cart.svg" wight="12" height="12"/>
+          <a href="#">Корзина</a>
+        </li>
       </ul>
       <ul>
         <li>
           <button type="button">Каталог товаров</button>
-          <!-- Выподающий список, то же вроде появляющегося окна -->
+          <img src="img/plus.svg" wight="16" height="16"/>
         </li>
       </ul>
       <ul>
-        <li><a href="#">Доставка</a> </li>
-        <li><a href="#">Гарантия</a> </li>
-        <li><a href="#">Контакты</a> </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
      </nav>
     </header>
@@ -48,30 +62,37 @@
           <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="index.html">Каталог товаров</a>
+          <img src="img/nav-arrow.svg" wight="4" height="7"/>
+          <a href="index.html">
+            Каталог товаров</a>
         </li>
-        <li>Моноподы для селфи</li>
+        <li>
+          <img src="img/nav-arrow.svg" wight="4" height="7"/>
+          Моноподы для селфи</li>
       </ul>
       <section>
         <h2>Фильтр:</h2>
         <!-- Размечаю так, хотя по моей логике это не как не может быть h2, но тогда нужно убирать section-->
         <ul>
           <li>Стоимость</li>
+          <img src="img/filter-button.svg" wight="20" height="23"/>
+          <img src="img/filter-button.svg" wight="20" height="23"/>
+          <!--Очень не понятна разметка фильтра, возник вопрос img может быть элементом списка, а то может его в <li> завернуть-->
           <li>
             Цвет
             <ul>
-              <li>Черный</li>
-              <li>Белый</li>
-              <li>Синий</li>
-              <li>Красный</li>
-              <li>Розовый</li>
+              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Черный</li>
+              <li><img src="img/checkbox-off.svg" wight="23" height="23"/>Белый</li>
+              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Синий</li>
+              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Красный</li>
+              <li><img src="img/checkbox-off.svg" wight="23" height="23"/>Розовый</li>
             </ul>
           </li>
           <li>
             Bluetooth
             <ul>
-              <li>Есть</li>
-              <li>Нет</li>
+              <li><img src="img/radio-on.svg" wight="25" height="25"/>Есть</li>
+              <li><img src="img/radio-off.svg" wight="25" height="25"/>Нет</li>
             </ul>
           </li>
         </ul>
@@ -82,9 +103,15 @@
         <!-- То же самое, что и с фильтром, чувство, что это какой нибудь <b> или <div>-->
         <ul>
           <li>По цене</li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По популярности</a>
+          </li>
         </ul>
+        <img src="img/icon-up-dir.svg" wight="11" height="10"/>
+        <img src="img/icon-down-dir.svg" wight="11" height="10"/>
       </section>
       <section>
         <h2>Каталог товаров - Моноподы для селфи</h2>
@@ -97,10 +124,14 @@
             </h3>
             <p>500 руб</p>
             <p>
-              <img src="https://via.placeholder.com/150x100" alt="Любительская селфи-палка">
+              <img src="img/1.jpg" wight="360" height="380" alt="Любительская селфи-палка"/>
               <ul>
-               <li><a href="#K">В корзину</a></li>
-               <li><a href="#C">Добавить к сравнению</a></li>
+               <li>
+                 <a href="#K">В корзину</a>
+               </li>
+               <li>
+                 <a href="#C">Добавить к сравнению</a>
+               </li>
               </ul>
             </p>
           </li>
@@ -111,10 +142,14 @@
             </h3>
             <p>1500 руб</p>
             <p>
-              <img src="https://via.placeholder.com/150x100" alt="Профессиональная селфи-палка">
+              <img src="img/2.jpg" wight="360" height="380" alt="Профессиональная селфи-палка"/>
               <ul>
-               <li><a href="#K">В корзину</a></li>
-               <li><a href="#C">Добавить к сравнению</a></li>
+               <li>
+                 <a href="#K">В корзину</a>
+               </li>
+               <li>
+                 <a href="#C">Добавить к сравнению</a>
+               </li>
               </ul>
             </p>
           </li>
@@ -125,10 +160,14 @@
             </h3>
             <p>2500 руб</p>
             <p>
-              <img src="https://via.placeholder.com/150x100" alt="Непотопляемая селфи-палка">
+              <img src="img/3.jpg" wight="360" height="380" alt="Непотопляемая селфи-палка"/>
               <ul>
-               <li><a href="#K">В корзину</a></li>
-               <li><a href="#C">Добавить к сравнению</a></li>
+               <li>
+                 <a href="#K">В корзину</a>
+               </li>
+               <li>
+                 <a href="#C">Добавить к сравнению</a>
+               </li>
               </ul>
             </p>
           </li>
@@ -139,10 +178,14 @@
             </h3>
             <p>4900 руб</p>
             <p>
-              <img src="https://via.placeholder.com/150x100" alt="Селфи-палка «Следуй за мной»">
+              <img src="img/4.jpg" wight="360" height="380" alt="Селфи-палка «Следуй за мной»"/>
               <ul>
-               <li><a href="#K">В корзину</a></li>
-               <li><a href="#C">Добавить к сравнению</a></li>
+               <li>
+                 <a href="#K">В корзину</a>
+               </li>
+               <li>
+                 <a href="#C">Добавить к сравнению</a>
+               </li>
               </ul>
             </p>
           </li>
@@ -150,33 +193,47 @@
         <ul>
           <li><a href="#">Назад</a></li>
           <li>1</li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Вперед</a></li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Вперед</a>
+          </li>
         </ul>
       </section>
     </main>
     <footer>
-      <img src="img/index-logo.svg" wight="30" height="90" alt="Логотип Девайс">
-      <p>г Москва. ул. Строителей, 15</p>
-      <p>
+      <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
+      <addres>г Москва. ул. Строителей, 15</addres>
+      <p><!-- Тег р кажется лишним, не знаю почему я так сделал-->
         <ul>
           <li>
             <a href="###">
-            <img src="iconca vhoda" wight="10" heigt="10" alt="Иконка пользователя"></a>
+              <img src="img/user.svg" wight="13" height="12"/>
+            <!-- По моему сдесь не нужна ссылка-->
+            </a>
           </li>
           <li>
             <a href="###">Валентин Петухов</a>
           </li>
           <li>
-             <a href="##">Выйти</a>
+            <a href="##">Выйти</a>
           </li>
         </ul>
         <ul>
-          <li><a href="#C">Сравнить</a> </li>
-          <li><a href="#K">Корзина</a> </li>
-        </ul>
-      </p>
+        <li>
+          <img src="img/compare.svg" wight="10" height="10"/>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <img src="img/cart.svg" wight="12" height="12"/>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      </p> <!-- Тег р кажется лишним, не знаю почему я так сделал-->
       <div>
         <ul>
           <li><a href="#">Доставка</a> </li>
@@ -187,14 +244,26 @@
       <p>Тел: +7 (495) 495-95-95</p>
       <div>
       <ul>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://www.freepngimg.com/thumb/logo/65332-icons-f8-facebook,-computer-facebook-logo-inc..png" wight="10" height="40" alt="Фейсбук"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://www.freepngimg.com/thumb/logo/65332-icons-f8-facebook,-computer-facebook-logo-inc..png" wight="10" height="40" alt="Инстаграм"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://www.freepngimg.com/thumb/logo/65332-icons-f8-facebook,-computer-facebook-logo-inc..png" wight="10" height="40" alt="Твиттер"></a></li>
-       <ul>
+        <li>
+          <a href="#">
+          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+           <img src="img/instagram.svg" wight="32" height="32" alt="Инстаграм"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          </a>
+        </li>
+       </ul>
      </div>
-     <a href="https://htmlacademy.ru/intensive/htmlcss">
-     <img src="https://cdn-images-1.medium.com/max/1200/1*1MNmkMxwLgXAii4le4Hs0A.png" wight="30" height="90" alt="Логотип Академии">
-     </a>
+      <a href="#">
+      <img src="img/logo-academy-html.svg" width="26.943" height="34.09" alt="Логотип Академии"/>
+      </a>
     </footer>
   </body>
 </html>
