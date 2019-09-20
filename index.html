@@ -8,30 +8,27 @@
     <header>
       <nav>
         <a>
-          <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
+          <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
         </a>
-        <img src="img/search.svg" wight="16" height="16"/>
-        <!-- Поиск пока не размечал, просто картинку добавил сразу-->
       <ul>
         <li>
-          <img src="img/user.svg" wight="13" height="12"/>
-          <a href="button">Войти</a>
+          <img src="img/user.svg" width="13" height="12" alt="Иконка вход"/>
+          <a href="login.html">Войти</a>
         </li>
       </ul>
       <ul>
         <li>
-          <img src="img/compare.svg" wight="10" height="10"/>
+          <img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" wight="12" height="12"/>
+          <img src="img/cart.svg" width="12" height="12" alt="Иконка корзина"/>
           <a href="#">Корзина</a>
         </li>
       </ul>
       <ul>
         <li>
-          <button type="button">Каталог товаров</button>
-          <img src="img/plus.svg" wight="16" height="16"/>
+          <button type="button">Каталог товаров<img alt="Каталог товаров" src="img/plus.svg" width="16" height="16"/></button>
         </li>
       </ul>
       <ul>
@@ -40,121 +37,160 @@
         <li><a href="#">Контакты</a> </li>
       </ul>
       </nav>
+      <form>
+        <input type="search" name="q" placeholder="Поиск по сайту">
+        <button type="submit"><img alt="Найти" src="img/search.svg" width="16" height="16"/></button>
+      </form>
     </header>
     <main>
-      <h1>Интернет магазин DEVICE</h1>
+
+
       <section>
-        <h2>Делай селфи,
-        <br>как Бен Стиллер!</h2>
-        <img src="img/selfi-palki.png" wight="384" height="486"/>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <p>Длина палки <span>8,5 м</span></p>
-        <p>Вес палки <span>5 кг</span></p>
-        <p>Материал <span>Карбон</span></p>
-        <a href="##">Подробнее</a>
-        <img src="img/slider-button.svg" wight="12" height="12"/>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
+          <h2>Вход в личный кабинет</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="user-login">Логин</label>
+              <input id="user-login" type="text" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="••••••••">
+          </p>
+          <p>
+            <label>
+               <input type="checkbox" name="remember">
+              Запомните меня
+            </label>
+          <a href="#">Я забыл пароль!</a>
+          </p>
+          <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button>
       </section>
-      <!--Дополнительные слайды <section>
-        <h2>Худеем
-        <br>правильно!</h2>
-        <img src="img/rem-hudeem.png" wight="345" height="485"/>
-        <p>Мотивурующие фитнес-браслеты помогут найти в себе силы
-        <br>не пропускать занятия и соблюдать диету.</p>
-        <p>Без подзарядки <span>48 часов</span></p>
-        <a href="##">Подробнее</a>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
-        <img src="img/slider-button.svg" wight="12" height="12"/>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
-      </section>-->
-      <!--Дополнительные слайды <section>
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <img src="img/pchela.png" wight="526" height="334"/>
-        <p>Этот обычный, на первый взгляд, квадракоптер оснащен
-        <br>мощьным лазером, замаскерованным под стандартную камеру.</p>
-        <p>Дальность полета <span>800 м</span></p>
-        <p>Радиус поражения <span>50 м</span></p>
-        <a href="##">Подробнее</a>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
-        <img src="img/slider-button-empty.svg" wight="12" height="12"/>
-        <img src="img/slider-button.svg" wight="12" height="12"/>
-      </section>-->
+
+
+      <h1 class="visually-hidden">Интернет магазин DEVICE</h1>
       <section>
-        <h2>Популярные группы товаров</h2>
+        <ul>
+          <li>
+            <h2>Делай селфи,
+            <br>как Бен Стиллер!</h2>
+            <img src="img/selfi-palki.png" width="384" height="486" alt="Делай селфи, как Бен Стиллер"/>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p>Длина палки <span>8,5 м</span></p>
+            <p>Вес палки <span>5 кг</span></p>
+            <p>Материал <span>Карбон</span></p>
+            <a href="#">Подробнее</a>
+          </li>
+          <li>
+            <h2>Худеем
+            <br>правильно!</h2>
+            <img src="img/rem-hudeem.png" width="345" height="485" alt="Худеем правильно!"/>
+            <p>Мотивурующие фитнес-браслеты помогут найти в себе силы
+            <br>не пропускать занятия и соблюдать диету.</p>
+            <p>Без подзарядки <span>48 часов</span></p>
+            <a href="#">Подробнее</a>
+         </li>
+         <li>
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <img src="img/pchela.png" width="526" height="334" alt="Порхает как бабочка, жалит как пчела!"/>
+            <p>Этот обычный, на первый взгляд, квадракоптер оснащен
+            <br>мощьным лазером, замаскерованным под стандартную камеру.</p>
+            <p>Дальность полета <span>800 м</span></p>
+            <p>Радиус поражения <span>50 м</span></p>
+            <a href="#">Подробнее</a>
+        </li>
+      </ul>
+      <div class="carousel__buttons">
+        <label>
+          <input type="radio" id="carousel_button_1" name="carousel_1" value="Слайд 1" checked>
+        </label>
+        <label>
+          <input type="radio" id="carousel_button_2" name="carousel_1" value="Слайд 2">
+        </label>
+        <label>
+          <input type="radio" id="carousel_button_3" name="carousel_1" value="Слайд 3">
+        </label>
+      </div>
+      <!-- По ходу картинки пойдут уже в стили (я думаю в background)
+        <img src="img/slider-button.svg" width="12" height="12" alt="1 слайд"/>
+        <img src="img/slider-button-empty.svg" width="12" height="12" alt="2 слайд"/>
+        <img src="img/slider-button-empty.svg" width="12" height="12" alt="3 слайд"/>
+      -->
+      </section>
+      <section>
+        <h2 class="visually-hidden">Популярные группы товаров</h2>
         <ul>
           <li>
             <a href="#">
-              <img src="img/popular-1.svg" wight="97" height="55" alt="Вертуальная реальность"/>
+              <img src="img/popular-1.svg" width="97" height="55" alt="Вертуальная реальность"/>
             </a>
             <a href="device-catalog.html">Вертуальная реальность</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-2.svg" wight="86" height="117" alt="Моноподы для селфи"/>
+              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"/>
             </a>
             <a href="device-catalog.html">Моноподы для селфи</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-3.svg" wight="71" height="87" alt="Экшн-камеры"/>
+              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры"/>
             </a>
             <a href="device-catalog.html">Экшн-камеры</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-4.svg" wight="107" height="65" alt="Фитнес-браслеты"/>
+              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты"/>
             </a>
             <a href="device-catalog.html">Фитнес-браслеты</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-5.svg" wight="56" height="98" alt="Умные часы"/>
+              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы"/>
             </a>
             <a href="device-catalog.html">Умные часы</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/popular-6.svg" wight="132" height="69" alt="Квадрокоптеры"/>
+              <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"/>
             </a>
             <a href="device-catalog.html">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       <section>
+        <h2>Информация</h2>
         <ul>
-          <li><a href="#">Доставка</a> </li>
-          <li><a href="#">Гарантия</a> </li>
-          <li><a href="#">Кредит</a> </li>
+          <li><button type="button">Доставка</button> </li>
+          <li><button type="button">Гарантия</button> </li>
+          <li><button type="button">Кредит</button> </li>
         </ul>
-        <!--Вот здесь мне кажется ошибка, ведь раздел должен иметь заголовок, а здесь его нету, то есть section неподходит-->
-      </section>
-      <section>
-        <h2>Доставка</h2>
+        <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        <img src="img/delivery.svg" wight="136" height="164" alt="Доставка от DEVICE"/>
+        <img src="img/delivery.svg" width="136" height="164" alt="Доставка от DEVICE"/>
       </section>
       <section>
-        <h2>Производители</h2>
+        <h2 class="visually-hidden">Производители</h2>
         <ul>
           <li>
           <a href="#">
-            <img src="img/DJI.jpg" wight="260" height="100" alt="DJL"/>
+            <img src="img/DJI.jpg" width="260" height="100" alt="DJL"/>
           </a>
           </li>
           <li>
           <a href="#">
-            <img src="img/SP-GADGETS.jpg" wight="260" height="100" alt="SP GADGETS"/>
+            <img src="img/SP-GADGETS.jpg" width="260" height="100" alt="SP GADGETS"/>
           </a>
           </li>
           <li>
           <a href="#">
-            <img src="img/GoPro.jpg" wight="260" height="100" alt="GoPro"/>
+            <img src="img/GoPro.jpg" width="260" height="100" alt="GoPro"/>
           </a>
           </li>
           <li>
           <a href="#">
-            <img src="img/VIVE.jpg" wight="260" height="100" alt="VIVE"/>
+            <img src="img/VIVE.jpg" width="260" height="100" alt="VIVE"/>
           </a>
           </li>
         </ul>
@@ -173,31 +209,46 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспасобность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" wight="560" height="222" alt="Квадрокоптеры"/>
-      <button type="button">Напишите нам</button>
+        <img src="img/map.jpg" width="560" height="222" alt="Квадрокоптеры"/>
+        <a href="#">Напишите нам</a>
+      </section>
+      <section>
+        <h2>Напишите нам</h2>
+          <form action="htts://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="user-name">Ваше имя</label>
+              <input id="user-name" type="text" name="name" placeholder="Иван Иванович">
+            </p>
+            <p>
+              <label for="user-email">E-mail</label>
+              <input id="user-email" type="text" name="email" placeholder="bmromanov@mail.ru" required>
+            </p>
+            <p>Текст сообщения:</p>
+            <p><textarea name="text" placeholder="Ваше сообщение" rows="5" cols="35"></textarea></p>
+            <button type="submit">Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
       </section>
     </main>
     <footer>
-      <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
-      <addres>г Москва. ул. Строителей, 15</addres>
-      <p>
+      <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
+      <p>г Москва. ул. Строителей, 15</p>
         <ul>
           <li>
-            <img src="img/user.svg" wight="13" height="12"/>
+            <img src="img/user.svg" width="13" height="12" alt="Иконка войти"/>
             <a href="button">Войти</a>
           </li>
         </ul>
         <ul>
           <li>
-            <img src="img/compare.svg" wight="10" height="10"/>
+            <img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>
             <a href="#">Сравнить</a>
           </li>
           <li>
-            <img src="img/cart.svg" wight="12" height="12"/>
+            <img src="img/cart.svg" width="12" height="12" alt="Иконка Корзина"/>
             <a href="#">Корзина</a>
           </li>
         </ul>
-      </p>
       <div>
         <ul>
           <li><a href="#">Доставка</a> </li>
@@ -210,24 +261,29 @@
       <ul>
         <li>
           <a href="#">
-          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук"/>
           </a>
         </li>
         <li>
           <a href="#">
-           <img src="img/instagram.svg" wight="32" height="32" alt="Инстаграм"/>
+           <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"/>
           </a>
         </li>
         <li>
           <a href="#">
-          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук"/>
           </a>
         </li>
        </ul>
      </div>
       <a href="#">
-      <img src="img/logo-academy-html.svg" width="26.943" height="34.09" alt="Логотип Академии"/>
+      <img src="img/logo-academy-html.svg" width="27" height="34" alt="Логотип Академии"/>
       </a>
     </footer>
   </body>
 </html>
+<!--
+<a href="#">
+<img src="img/logo-academy-html.svg" width="26,943" height="34,09" alt="Логотип Академии"/>
+</a>
+-->

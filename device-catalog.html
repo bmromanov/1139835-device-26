@@ -2,44 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Моноподы для селфи в Москве. Цены, каталог, характеристики.</title>
   </head>
   <body>
    <header>
     <nav>
      <a>
-          <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
+          <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
         </a>
-        <img src="img/search.svg" wight="16" height="16"/>
+        <img src="img/search.svg" width="16" height="16" alt=""/>
         <!-- Поиск пока не размечал, просто картинку добавил сразу-->
       <ul>
         <li>
-          <a href="###">
-            <img src="img/user.svg" wight="13" height="12"/>
+          <a href="#">
+            <img src="img/user.svg" width="13" height="12" alt=""/>
             <!-- По моему сдесь не нужна ссылка-->
           </a>
         </li>
         <li>
-          <a href="###">Валентин Петухов</a>
+          <a href="#">Валентин Петухов</a>
         </li>
         <li>
-          <a href="##">Выйти</a>
+          <a href="#">Выйти</a>
         </li>
       </ul>
       <ul>
         <li>
-          <img src="img/compare.svg" wight="10" height="10"/>
+          <img src="img/compare.svg" width="10" height="10" alt=""/>
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" wight="12" height="12"/>
+          <img src="img/cart.svg" width="12" height="12" alt=""/>
           <a href="#">Корзина</a>
         </li>
       </ul>
       <ul>
         <li>
-          <button type="button">Каталог товаров</button>
-          <img src="img/plus.svg" wight="16" height="16"/>
+          <button type="button">Каталог товаров<img alt="Каталог товаров" src="img/plus.svg" width="16" height="16"/></button>
         </li>
       </ul>
       <ul>
@@ -54,6 +53,10 @@
         </li>
       </ul>
      </nav>
+     <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="search" name="q" placeholder="Поиск по сайту">
+        <button type="submit"><img alt="Найти" src="img/search.svg" width="16" height="16"/></button>
+      </form>
     </header>
     <main>
       <h1>Моноподы для селфи</h1>
@@ -62,56 +65,73 @@
           <a href="index.html">Главная</a>
         </li>
         <li>
-          <img src="img/nav-arrow.svg" wight="4" height="7"/>
+          <img src="img/nav-arrow.svg" width="4" height="7" alt=""/>
           <a href="index.html">
             Каталог товаров</a>
         </li>
         <li>
-          <img src="img/nav-arrow.svg" wight="4" height="7"/>
+          <img src="img/nav-arrow.svg" width="4" height="7" alt=""/>
           Моноподы для селфи</li>
       </ul>
       <section>
-        <h2>Фильтр:</h2>
-        <!-- Размечаю так, хотя по моей логике это не как не может быть h2, но тогда нужно убирать section-->
-        <ul>
-          <li>Стоимость</li>
-          <img src="img/filter-button.svg" wight="20" height="23"/>
-          <img src="img/filter-button.svg" wight="20" height="23"/>
-          <!--Очень не понятна разметка фильтра, возник вопрос img может быть элементом списка, а то может его в <li> завернуть-->
-          <li>
-            Цвет
-            <ul>
-              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Черный</li>
-              <li><img src="img/checkbox-off.svg" wight="23" height="23"/>Белый</li>
-              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Синий</li>
-              <li><img src="img/checkbox-on.svg" wight="27" height="23"/>Красный</li>
-              <li><img src="img/checkbox-off.svg" wight="23" height="23"/>Розовый</li>
-            </ul>
-          </li>
-          <li>
-            Bluetooth
-            <ul>
-              <li><img src="img/radio-on.svg" wight="25" height="25"/>Есть</li>
-              <li><img src="img/radio-off.svg" wight="25" height="25"/>Нет</li>
-            </ul>
-          </li>
-        </ul>
-        <a href="#">Показать</a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2>Фильтр:</h2>
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" min="0" max="5000" step="1" value="50">
+            <!--
+            <img src="img/filter-button.svg" width="20" height="23"/>
+            <img src="img/filter-button.svg" width="20" height="23"/>
+            -->
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" id="color_bleck" name="color_bleck" checked value="bleck">
+            <label for="color_bleck">Черный</label>
+            <br>
+            <input type="checkbox" id="color_white" name="color_bleck" value="white">
+            <label for="color_white">Белый</label>
+            <br>
+            <input type="checkbox" id="color_blue" name="color_bleck" checked value="blue">
+            <label for="color_blue">Синий</label>
+            <br>
+            <input type="checkbox" id="color_red" name="color_bleck" checked value="red">
+            <label for="color_red">Красный</label>
+            <br>
+            <input type="checkbox" id="color_pink" name="color_bleck" value="pink">
+            <label for="color_pink">Розовый</label>
+            <!--
+              <img src="img/checkbox-on.svg" width="27" height="23"/>Черный
+              <img src="img/checkbox-off.svg" width="23" height="23"/>Белый
+              <img src="img/checkbox-on.svg" width="27" height="23"/>Синий
+              <img src="img/checkbox-on.svg" width="27" height="23"/>Красный
+              <img src="img/checkbox-off.svg" width="23" height="23"/>Розовый
+              -->
+            </fieldset>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <input type="radio" id="Bluetooth_yes" name="Bluetooth_yes" value="yes" checked>
+              <label for="Bluetooth_yes">Есть</label>
+              <br>
+              <input type="radio" id="Bluetooth_no" name="Bluetooth_no" value="no">
+              <label for="Bluetooth_no">Нет</label>
+              <!--
+               <img src="img/radio-on.svg" width="25" height="25"/>Есть
+               <img src="img/radio-off.svg" width="25" height="25"/>Нет
+               -->
+            </fieldset>
+        <button type="button">Показать</button>
+        </form>
       </section>
       <section>
         <h2>Сортировка:</h2>
-        <!-- То же самое, что и с фильтром, чувство, что это какой нибудь <b> или <div>-->
-        <ul>
-          <li>По цене</li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По популярности</a>
-          </li>
-        </ul>
-        <img src="img/icon-up-dir.svg" wight="11" height="10"/>
-        <img src="img/icon-down-dir.svg" wight="11" height="10"/>
+            <p>
+              <button type="button">По цене</button>
+              <button type="button">По типу</button>
+              <button type="button">По популярности</button>
+              <button><img src="img/icon-up-dir.svg" width="11" height="10" alt=""/></button>
+              <button><img src="img/icon-down-dir.svg" width="11" height="10" alt=""/></button>
+            </p>
       </section>
       <section>
         <h2>Каталог товаров - Моноподы для селфи</h2>
@@ -123,17 +143,15 @@
               <!-- ссылка на товар -->
             </h3>
             <p>500 руб</p>
-            <p>
-              <img src="img/1.jpg" wight="360" height="380" alt="Любительская селфи-палка"/>
+              <img src="img/1.jpg" width="360" height="380" alt="Любительская селфи-палка"/>
               <ul>
                <li>
-                 <a href="#K">В корзину</a>
+                 <a href="#">В корзину</a>
                </li>
                <li>
-                 <a href="#C">Добавить к сравнению</a>
+                 <a href="#">Добавить к сравнению</a>
                </li>
               </ul>
-            </p>
           </li>
           <li>
             <h3>
@@ -141,17 +159,15 @@
               <!-- ссылка на товар -->
             </h3>
             <p>1500 руб</p>
-            <p>
-              <img src="img/2.jpg" wight="360" height="380" alt="Профессиональная селфи-палка"/>
+              <img src="img/2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"/>
               <ul>
                <li>
-                 <a href="#K">В корзину</a>
+                 <a href="#">В корзину</a>
                </li>
                <li>
-                 <a href="#C">Добавить к сравнению</a>
+                 <a href="#">Добавить к сравнению</a>
                </li>
               </ul>
-            </p>
           </li>
           <li>
             <h3>
@@ -159,17 +175,15 @@
               <!-- ссылка на товар -->
             </h3>
             <p>2500 руб</p>
-            <p>
-              <img src="img/3.jpg" wight="360" height="380" alt="Непотопляемая селфи-палка"/>
+              <img src="img/3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"/>
               <ul>
                <li>
-                 <a href="#K">В корзину</a>
+                 <a href="#">В корзину</a>
                </li>
                <li>
-                 <a href="#C">Добавить к сравнению</a>
+                 <a href="#">Добавить к сравнению</a>
                </li>
               </ul>
-            </p>
           </li>
           <li>
             <h3>
@@ -177,17 +191,15 @@
               <!-- ссылка на товар -->
             </h3>
             <p>4900 руб</p>
-            <p>
-              <img src="img/4.jpg" wight="360" height="380" alt="Селфи-палка «Следуй за мной»"/>
+              <img src="img/4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"/>
               <ul>
                <li>
-                 <a href="#K">В корзину</a>
+                 <a href="#">В корзину</a>
                </li>
                <li>
-                 <a href="#C">Добавить к сравнению</a>
+                 <a href="#">Добавить к сравнению</a>
                </li>
               </ul>
-            </p>
           </li>
         </ul>
         <ul>
@@ -206,34 +218,32 @@
       </section>
     </main>
     <footer>
-      <img src="img/logo-device.svg" wight="165" height="35" alt="Логотип Девайс"/>
-      <addres>г Москва. ул. Строителей, 15</addres>
-      <p><!-- Тег р кажется лишним, не знаю почему я так сделал-->
+      <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
+      <p>г Москва. ул. Строителей, 15</p>
         <ul>
           <li>
-            <a href="###">
-              <img src="img/user.svg" wight="13" height="12"/>
+            <a href="#">
+              <img src="img/user.svg" width="13" height="12" alt=""/>
             <!-- По моему сдесь не нужна ссылка-->
             </a>
           </li>
           <li>
-            <a href="###">Валентин Петухов</a>
+            <a href="#">Валентин Петухов</a>
           </li>
           <li>
-            <a href="##">Выйти</a>
+            <a href="#">Выйти</a>
           </li>
         </ul>
         <ul>
         <li>
-          <img src="img/compare.svg" wight="10" height="10"/>
+          <img src="img/compare.svg" width="10" height="10" alt=""/>
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" wight="12" height="12"/>
+          <img src="img/cart.svg" width="12" height="12" alt=""/>
           <a href="#">Корзина</a>
         </li>
       </ul>
-      </p> <!-- Тег р кажется лишним, не знаю почему я так сделал-->
       <div>
         <ul>
           <li><a href="#">Доставка</a> </li>
@@ -246,23 +256,23 @@
       <ul>
         <li>
           <a href="#">
-          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук"/>
           </a>
         </li>
         <li>
           <a href="#">
-           <img src="img/instagram.svg" wight="32" height="32" alt="Инстаграм"/>
+           <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"/>
           </a>
         </li>
         <li>
           <a href="#">
-          <img src="img/fb.svg" wight="32" height="32" alt="Фейсбук"/>
+          <img src="img/fb.svg" width="32" height="32" alt="Фейсбук"/>
           </a>
         </li>
        </ul>
      </div>
       <a href="#">
-      <img src="img/logo-academy-html.svg" width="26.943" height="34.09" alt="Логотип Академии"/>
+      <img src="img/logo-academy-html.svg" width="27" height="34" alt="Логотип Академии"/>
       </a>
     </footer>
   </body>
