@@ -10,37 +10,29 @@
         <a>
           <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
         </a>
-      <ul>
-        <li>
-          <img src="img/user.svg" width="13" height="12" alt="Иконка вход"/>
           <a href="login.html">Войти</a>
-        </li>
-      </ul>
       <ul>
         <li>
-          <img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>
+          <!--<img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>-->
           <a href="#">Сравнить</a>
         </li>
         <li>
-          <img src="img/cart.svg" width="12" height="12" alt="Иконка корзина"/>
+          <!--<img src="img/cart.svg" width="12" height="12" alt="Иконка корзина"/>-->
           <a href="#">Корзина</a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <button type="button">Каталог товаров<img alt="Каталог товаров" src="img/plus.svg" width="16" height="16"/></button>
-        </li>
-      </ul>
+      <a href="device-catalog.html">Каталог товаров</a>
       <ul>
         <li><a href="#">Доставка</a> </li>
         <li><a href="#">Гарантия</a> </li>
         <li><a href="#">Контакты</a> </li>
       </ul>
       </nav>
-      <form>
-        <input type="search" name="q" placeholder="Поиск по сайту">
-        <button type="submit"><img alt="Найти" src="img/search.svg" width="16" height="16"/></button>
-      </form>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="search-device"></label>
+        <input type="search" id="search-device" name="search" placeholder="Поиск по сайту">
+           <img alt="Найти" src="img/search.svg" width="16" height="16"/>
+       </form>
     </header>
     <main>
 
@@ -94,8 +86,7 @@
          <li>
             <h2>Порхает как бабочка, жалит как пчела!</h2>
             <img src="img/pchela.png" width="526" height="334" alt="Порхает как бабочка, жалит как пчела!"/>
-            <p>Этот обычный, на первый взгляд, квадракоптер оснащен
-            <br>мощьным лазером, замаскерованным под стандартную камеру.</p>
+            <p>Этот обычный, на первый взгляд, квадракоптер оснащен мощьным лазером, замаскерованным под стандартную камеру.</p>
             <p>Дальность полета <span>800 м</span></p>
             <p>Радиус поражения <span>50 м</span></p>
             <a href="#">Подробнее</a>
@@ -223,8 +214,11 @@
               <label for="user-email">E-mail</label>
               <input id="user-email" type="text" name="email" placeholder="bmromanov@mail.ru" required>
             </p>
-            <p>Текст сообщения:</p>
-            <p><textarea name="text" placeholder="Ваше сообщение" rows="5" cols="35"></textarea></p>
+            <p>
+              <label>Текст сообщения:</label>
+              <textarea name="text" placeholder="Ваше сообщение" rows="5" cols="35"></textarea>
+              </label>
+            </p>
             <button type="submit">Отправить</button>
         </form>
         <button type="button">Закрыть</button>
@@ -232,20 +226,15 @@
     </main>
     <footer>
       <img src="img/logo-device.svg" width="165" height="35" alt="Логотип Девайс"/>
-      <p>г Москва. ул. Строителей, 15</p>
+      <adress>г Москва. ул. Строителей, 15</adress>
+      <a href="button">Войти</a>
         <ul>
           <li>
-            <img src="img/user.svg" width="13" height="12" alt="Иконка войти"/>
-            <a href="button">Войти</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>
+            <!--<img src="img/compare.svg" width="10" height="10" alt="Иконка сравнить"/>-->
             <a href="#">Сравнить</a>
           </li>
           <li>
-            <img src="img/cart.svg" width="12" height="12" alt="Иконка Корзина"/>
+            <!--<img src="img/cart.svg" width="12" height="12" alt="Иконка Корзина"/>-->
             <a href="#">Корзина</a>
           </li>
         </ul>
